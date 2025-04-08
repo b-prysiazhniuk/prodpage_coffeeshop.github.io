@@ -1,25 +1,39 @@
 /* style.css — Загальні властивості елементів */
 
 html, body {
-    font-family: 'Montserrat', sans-serif;  /* Гарнітура для основного тексту */
+    background-color: #F4ECE5;
+    font-family: "Golos Text", sans-serif; /* Гарнітура для основного тексту */
+    font-optical-sizing: auto;
+    font-weight: regular;
+    font-style: normal;  
     font-size: 16px;        /* Розмір шрифта основного тексту */
     line-height: 1.4;       /* Міжрядковий інтервал основного тексту в %/100 */
     letter-spacing: .002em; /* Міжлітерний інтервал основного тексту збільшений на 2/1000 Em */
     scroll-behavior: smooth;/* Плавна прокрутка під час переходу за якорем (ancor) */
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;  /* Гарнітура для заголовків */
-    font-weight: 400;                       /* Накреслення для заголовків */
-    line-height: 1.2;                       /* Міжрядковий інтервал для заголовків в %/100 */
-    letter-spacing: 0.005em;                /* Міжлітерний інтервал основного тексту збільшений на 2/1000 Em */
-    margin: 0 0 .5em;                       /* Відступ знизу після заголовку */
+ h2, h3, h4, h5, h6 {
+    font-family: "Neue Machina";  /* Гарнітура для заголовків */
+    /*font-weight: 400;*/                       /* Накреслення для заголовків */
+    line-height: 37px;                       /* Міжрядковий інтервал для заголовків в %/100 */
+    letter-spacing: .05em;              /* Міжлітерний інтервал основного тексту збільшений на 2/1000 Em */
+    margin-bottom: .35em;                       /* Відступ знизу після заголовку */
     text-align: left;                       /* Вирівнювання тексту заголовків */
 }
 
-h1 { font-size: 2rem; }     /* Висота заголовків у відносних величинах */
+h1 { 
+    font-family: "Neue Machina"; 
+    font-size: 60px;
+    font-weight:600; /* Встановлюємо Ultra Bold (шрифт "Neue Machina Ultra Bold" має вагу 900) */
+    line-height: 64px; /* Встановлюємо line-height */
+    letter-spacing: -2.2%; /* Встановлюємо відстань між літерами */
+    margin: 25px 0; /* Встановлюємо відступи зверху і знизу */
+    text-align: left;
+    
+
+}     
 h2 { font-size: 1.5rem; }   /* rem - відносний розмір *(body font-size) */
-h3 { font-size: 1.35rem; }
+h3 { font-size: 1.15rem; }
 
 p {
     margin-bottom: .75em;   /* Відступ знизу після абзацу */
@@ -38,7 +52,56 @@ a:hover {
 .img-box svg,
 .img-box img {
     display: block; /* Відображати зображення (<img>, <svg>) всередині контейнера .img-box як блочний елемент */
-    width: 100%;
+    max-width: 100%;
 }
 
+.hlimit img {
+    height: 100%;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    width: 163px; 
+    height: 40px; 
+    border-radius: 36px;
+    padding: 12px 24px;
+    gap: 10px;
+    background-color: var(--button-color-1);
+    color: var(--txt-color-3);
+    font-size: 16px; /* Розмір тексту */
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.button:hover {
+    color: var(--txt-color-3); /* Залишає колір тексту без змін при наведенні */
+}
 /* *************************************************************** */
+
+
+
+.img-box {
+    position: relative; /*  відносне позиціонування для контейнера */
+    display: inline-block; /* Щоб розміри підлаштовувалися під зображення */
+}
+
+.bg-img {
+    width: 80%; /* Розтягує фонове зображення на весь контейнер */
+    height: auto;
+    display: block;
+}
+
+.overlay-img {
+    position: absolute; /* Абсолютне позиціонування поверх фонового */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Точне центрування */
+    width: 15%; /* Налаштуйте розмір */
+}

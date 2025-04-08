@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/burger.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/section_01.css">
+    
 
+    
 </head>
 <body id="top">
     <!-- Navigation section -->
     <nav>
         <div class="navbar">
             <a href="#top" class="logo">
-                <img src="img/logo.svg" alt="Логотип проєкту">
-                <span>Назва проєкту</span>
+                <img src="img/logo.webp" alt="Buco">
+                <span>Buco</span>
             </a>
            <div class="navigation">
                 <button class="nav-icon">
@@ -27,10 +36,15 @@
                     <span></span>
                 </button>
                 <ul class="level_1">
-                    <li><a class="nav-link" href="#top">Додому</a></li>
-                    <li><a class="nav-link" href="#s1">Пункт 1</a></li>
-                    <li><a class="nav-link" href="#s2">Пункт 2</a></li>
-                    <li><a class="nav-link" href="#s3">Пункт 3</a></li>
+                    <li><a class="nav-link" href="#top">Чому Buco?</a></li>
+                    <li><a class="nav-link" href="#s1">Про нас</a></li>
+                    <li><a class="nav-link" href="#s2">Каталог</a></li>
+                    <li><a class="nav-link" href="#s3">Контакти</a></li>
+                    <li>
+                        <a class="nav-link" href="#top">
+                            <img src="img/кошик.png" alt="icon" width="40.38"> 
+                        </a>
+                    </li>
                 </ul>
            </div>
        </div>
@@ -43,31 +57,106 @@
         <!-- Start of the Header section -->
         <header class="container">
             <div class="inside">
+                <div class="box cols">
+                    <div class="col c1">
+                        <h1>КАВА, ЩО НАДИХАЄ</h1>
+                        <p>Відчуйте вишуканий смак бразильської кави в кожному ковтку</p>
+                        <a href="#s2" class="button">Замовити</a>
+                    </div>
+                    <div class="col c2">
+                        <div class="img-box hlimit"> 
+                            <img src="img/photo_2024-10-23_15-54-19.svg" alt="Накладене">
+                        </div>
+                    </div>
+                    <div class="col c3">
+                        <div class="icon-box">
+                            <div class="icon img-box">
+                                <img src="img/icon.png" alt="">
+                            </div>
+                            <div class="txt-box">
+                                <h3>Заголовок</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, illo!</p>
+                            </div>
+                        </div>
+                        <div class="icon-box">
+                            <div class="icon img-box">
+                                <img src="img/icon.png" alt="">
+                            </div>
+                            <div class="txt-box">
+                                <h3>Заголовок</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, illo!</p>
+                            </div>
+                        </div>
+                        <div class="icon-box">
+                            <div class="icon img-box">
+                                <img src="img/icon.png" alt="">
+                            </div>
+                            <div class="txt-box">
+                                <h3>Заголовок</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, illo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- END of the Header section -->
 
-        <!-- Section #s1 -->
+        <!-- Чому Buco? #s1 -->
         <section id="s1" class="container">
             <div class="inside">
+                <h2>Чому Buco?</h2>
+                <p>Buco – це бренд кави, створений з любов'ю до смаку та традицій.</p>
+                <ul>
+                <li>№1 бренд кави 2024 року</li>
+                <li>100% відібрані зерна</li>
+                <li>Різні формати: зернова, мелена, капсули</li>
+        </ul>
             </div>
         </section>
         
-        <!-- Section #s2 -->
+        <!-- Про нас #s2 -->
         <section id="s2" class="container">
             <div class="inside">
+                <h2>Про нас</h2>
+                <p>Buco – це поєднання традицій і сучасних технологій обсмаження.</p>
             </div>
         </section>
 
-        <!-- Section #s3 -->
+        <!-- Каталог #s3 -->
         <section id="s3" class="container">
             <div class="inside">
+                <h2>Серія "Мелена кава"</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="img/kenya.png" alt="Рецепт Кенії">
+                <p>Рецепт Кенії - 200г</p>
+                <button>Замовити</button>
+            </div>
+            <div class="product">
+                <img src="img/italy.png" alt="Рецепт Італії">
+                <p>Рецепт Італії - 200г</p>
+                <button>Замовити</button>
             </div>
         </section>
+
+        <!-- Контакти #s4-->
+    <section id="contacts" class="container">
+        <h2>Зв'яжіться з нами</h2>
+        <form>
+            <input type="email" placeholder="Ваш email">
+            <input type="tel" placeholder="Ваш телефон">
+            <textarea placeholder="Повідомлення"></textarea>
+            <button type="submit">Надіслати</button>
+        </form>
+    </section>
 
         <!-- Start of the Footer section -->
         <footer class="container">
             <div class="inside">
+                <p>&copy; 2024 Buco. Всі права захищені.</p>
+                <p>м. Чернівці, вул. Леоніда Каденюка, 34-3</p>
+                <p>Email: info@bucooffee.com.ua</p>
             </div>
         </footer>
         <!-- END of the Footer section -->

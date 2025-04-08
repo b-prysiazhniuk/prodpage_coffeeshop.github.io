@@ -1,0 +1,87 @@
+header {
+    /*background-image: url("../img/bg_header.jpg");*/
+    background-color: F4ECE5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(244,236,229,.100);
+    background-blend-mode:overlay;
+}
+
+header h1, header h2, header p {
+    color: var(27614B);
+    color: #27614B;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;    /* Align for main axis */
+    align-items: flex-start;    /* Align for cross axis */
+    gap: 20px;
+}
+
+.hor {                          /* Додатковий клас модифікації вирівнювання */
+    flex-direction: row;        /* Main axis row */
+}
+
+.ver {                          /* Додатковий клас модифікації вирівнювання */
+    flex-direction: column;     /* Main axis column */
+}
+
+/* Temporary for development */
+
+/* End of Temporary for development */
+
+.col.c1 {
+    flex-basis: 30%;
+    text-align: left;
+}
+
+.col.c2 {
+    background-image: url("../img/col2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    flex-basis: 45%;
+    text-align: center;
+    padding: 50px;
+}
+
+.col.c3{
+   flex-basis: 25%;
+   text-align: left;
+}
+
+.icon-box {
+    display: flex;
+    align-items: flex-start;
+}
+.icon {
+    width: 40px;
+    padding: 0;
+    margin-top: .35em;
+    margin-right: .5em;
+}
+
+.icon-box h3 {
+    margin-bottom: 0;
+}
+
+.txt-box{}
+
+@media screen and (max-width:767px) {
+
+}
+
+@media screen and (max-width:560px) {
+    .hor {
+        gap:0;
+        flex-wrap: wrap;
+    }
+
+    .col.c1,
+    .col.c2,
+    .col.c3 {
+        flex-basis: 100%;
+    }
+}

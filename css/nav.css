@@ -1,5 +1,5 @@
 nav {
-    /* background: var(--bg-nav-1); */
+    background: var(--bg-nav-1); 
     background: transparent; /* Колір фону навігаційної панелі 1 */
     background-repeat: no-repeat;
     background-position: bottom;
@@ -63,7 +63,7 @@ nav.topfixed::before {
 }
 
 .logo img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -85,7 +85,7 @@ nav.topfixed::before {
     color: var(--logo-color-1);
     font-size: .8rem; /* 0.85 * font-size body */
     line-height: 1.4;
-    letter-spacing: .035em;
+    letter-spacing: 0;
     font-weight: 600;
     text-transform: uppercase;
     max-width: 80px;
