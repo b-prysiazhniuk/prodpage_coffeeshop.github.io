@@ -8,7 +8,7 @@ header {
     background-blend-mode:overlay;
 }
 
-header h1, header h2, header p {
+header h1, header h2, header  {
     color: var(27614B);
     color: #27614B;
 }
@@ -16,7 +16,7 @@ header h1, header h2, header p {
 .box {
     display: flex;
     justify-content: space-between;    /* Align for main axis */
-    align-items: flex-start;    /* Align for cross axis */
+    align-items: center;    /* Align for cross axis */
     gap: 20px;
 }
 
@@ -32,24 +32,37 @@ header h1, header h2, header p {
 
 /* End of Temporary for development */
 
+
+
+/*!-- ХЕДЕР #s --*/
 .col.c1 {
-    flex-basis: 30%;
-    text-align: left;
+  flex-basis: 20%;
+  text-align: left;
+  /* align-self: flex-start; */
 }
 
+
+
 .col.c2 {
-    background-image: url("../img/col2.png");
+    background-image: url("../img/sun.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
-    flex-basis: 45%;
+    /*background-size: contain;*/
+    background-size: 60% auto;
+    width: 55%;
+    /* height: 432.52px; */
+    min-height: 65dvh;
+    flex-basis: 60%;
     text-align: center;
-    padding: 50px;
+    /* padding: 50px; */
+    /* margin-top:  4.25rem; */
 }
 
 .col.c3{
-   flex-basis: 25%;
+   flex-basis: 20%;
+   width:25%;
    text-align: left;
+   /* margin-top:  7.875rem; */
 }
 
 .icon-box {
@@ -57,17 +70,20 @@ header h1, header h2, header p {
     align-items: flex-start;
 }
 .icon {
-    width: 40px;
+   /* width: 62px;*/
     padding: 0;
     margin-top: .35em;
-    margin-right: .5em;
+    margin-right: 1.6875rem;
 }
 
 .icon-box h3 {
-    margin-bottom: 0;
+    margin-bottom: 8;
 }
 
-.txt-box{}
+.icon-box:not(:last-child) {
+    margin-bottom: 3.5rem; /* Відступ знизу */
+
+}
 
 @media screen and (max-width:767px) {
 
@@ -85,3 +101,383 @@ header h1, header h2, header p {
         flex-basis: 100%;
     }
 }
+
+/*!-- Кінець ХЕДЕРА #s4 --*/
+
+
+/*!-- ПРОДУКТИ #s --*/
+  
+.products__container {
+    background-image: url("../img/restangle.png");
+    background-repeat: no-repeat;
+    background-position: center 3.125rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 87px; /* відступи зліва і справа */
+    gap: 7.7rem;
+  }
+
+
+.product {
+    text-align: center;
+    font-family: "Golos Text", sans-serif;
+}
+
+.product-circle {
+    /* background-image: url("../img/png/Ellipse\ 1.png"); */
+    width: 188px;
+    height: 188px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.yellow { background-color: #F4C883;}
+.pink { background-color: #CD7A7C;}
+.green { background-color: #689081;}
+
+.product-circle img {
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.rating {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #ffffff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-family: "Golos Text", sans-serif;
+}
+
+
+/*!-- КІНЕЦЬ ПРОДУКТИ #s4 --*/
+
+/*!-- ЧОМУ BUCO #s2 --*/
+.box-section2{
+    background-image: url("../img/photo_section_2_2.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;   
+    gap: 168px;
+  }
+  
+  .col.c1-2 {
+    width: 50%;
+    height: 76dvh;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .col.c1-2 img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .col.c2-2 {
+    /*padding: 67px;*/
+    box-sizing: border-box;
+    text-align: left;
+    margin-top: 4.3125rem;
+  }
+
+  .icon-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    /*gap: 2.5rem 3rem;  вертикальний та горизонтальний відступи */
+    max-width: 800px;
+    
+  }
+  
+  .icon-box-s2 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 3.5rem;
+    
+  }
+
+  .icon-s2{
+    width: 62px;
+    padding: 0;
+    margin-top: .35em;
+    margin-right: 4rem;
+}
+
+  .txt-box h3 {
+    margin-bottom: 8px;
+  }
+
+
+/*!--КІНЕЦЬ ЧОМУ BUCO #s2 --*/
+
+
+
+/*!-- ПРО НАС #s3 --*/
+#s3 .title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color:  #27614B; 
+    margin-top: 4.06rem;
+  }
+
+
+#s3 .box.cols {
+  display: flex;
+  /* align-items: flex-start; */
+  justify-content: center;
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#s3 .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+#s3 .col.c1 {
+    text-align: right;
+}
+#s3 .col.c3 {
+    text-align: left;
+}
+#s3 .col.c1,
+#s3 .col.c3 {
+  flex: 0 0 45%;;
+  align-items: flex-start;
+}
+
+#s3 .col.c2 {
+    background-image: url(../img/photo_section_3.png);
+    flex: 0 0 auto; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 543px;
+    height: 543px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    /* margin-top: 0px; */
+    
+}
+
+#s3 .col.c1 .icon-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    text-align: right; 
+    margin-bottom: 3.5rem;
+
+}
+#s3 .col.c3 .icon-box {
+  display: flex;
+  flex-direction: column; 
+  align-items: left;
+  gap: 12px;
+  margin-bottom: 3.5rem;
+}
+
+#s3 .icon {
+  padding: 0;
+  margin-top: .35em;
+  margin-right: 1.6875rem;
+}
+
+#s3 .col.c1 .icon-box,
+#s3 .col.c3 .icon-box {
+  width: 100%;
+  max-width: 600px;
+}
+
+#s3 .icon-box h3 {
+  margin-bottom: 8px;
+}
+
+#s3 .col.c1 .txt-box,
+#s3 .col.c3 .txt-box {
+    width: 100%;
+    max-width: 100%; 
+}
+
+#s3 .hlimit img {
+    height: 100%;
+}
+
+
+
+
+
+/*!-- Каталог #s4 --*/
+
+#s4 .title {
+  margin-bottom: 16px;
+  text-align: left;
+  margin-left: 417px;
+}
+
+.section-description-1 {
+  font-size: 20px;
+  max-width: 400px;
+  font-weight: 700;
+  color: #A7A7A7;
+  margin-bottom: 16px;
+  text-align: left;
+  margin-left: 417px;
+}
+
+.section-description-2 {
+  font-size: 14px;
+  max-width: 400px;
+  color: #333;
+  text-align: left;
+  margin-left: 417px;
+}
+
+.coffee-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+  align-items: flex-end;
+}
+
+.coffee-card {
+  filter: drop-shadow(2px 2px 4px #ccc);
+  padding: 1em;
+  /* flex-direction: column;
+  justify-content: space-between;  */
+  position: relative;
+  text-align: center;
+  font-family: "Golos Text", sans-serif;
+  margin: 0 auto 12px auto;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.coffee-card .card-bg {
+  position: absolute;
+  box-shadow: 0 0 20px #FAEAE0;
+  border-radius: 16px;
+  z-index: 0;
+} 
+
+/* Розміри для великої картки */
+.coffee-card.large .card-bg {
+  width: 262px;
+  height: 375px;
+}
+
+/* Розміри для малих карток */
+.coffee-card.small .card-bg {
+  width: 175px;
+  height: 211px;
+  object-fit: cover; 
+  border-radius: 8px; 
+}
+
+.coffee-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #2a453b;
+  position: relative;
+  z-index: 1;
+}
+
+.weight-price {
+  font-size: 16px;
+  margin-bottom: 18px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.weight-price span {
+  font-weight: bold;
+  margin-left:  18px;
+}
+
+
+/*!-- Каталог #s5 --*/
+
+.callback-section {
+  background-color: #F4ECE5;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;  
+  margin: 0 auto;  
+  padding: 93px 20px;
+}
+
+.callback-form {
+  padding: 32px;
+  max-width: 460px;
+  width: 100%;
+  font-family: "Golos Text", sans-serif;
+}
+
+#s5 .title{
+margin-bottom: 0rem;
+color: #27614B;
+font-family: "Golos Text";
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%;
+text-align: center;
+}
+
+.callback-form label {
+  display: block;
+  margin: 17px 0 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.callback-form input,
+.callback-form textarea {
+  display: flex;
+  width: 609px;
+  height: 45px;;
+  padding: 12px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border: none;
+  border-radius: 36px;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.callback-form textarea {
+  resize: none;
+  margin-bottom: 46px;
+}
+
+.button {
+  border: none;
+  outline: none;
+}
+
+/*!-- Кінець #s5 --*/

@@ -65,6 +65,7 @@ nav.topfixed::before {
 .logo img {
     max-width: 100%;
     height: auto;
+    margin-right: 15px;
 }
 
 .logo:hover {
@@ -77,17 +78,16 @@ nav.topfixed::before {
     display: flex;
 }
 
-.logo img {
-    margin-right: 15px;
-}
+
 
 .logo span {
+    font-family: "Choplin-Bold", sans-serif;
     color: var(--logo-color-1);
-    font-size: .8rem; /* 0.85 * font-size body */
+    font-size: 1.25rem; 
     line-height: 1.4;
     letter-spacing: 0;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-weight: 700;
+    /*text-transform: uppercase;*/
     max-width: 80px;
 }
 
@@ -103,10 +103,10 @@ nav .navbar {
 .navigation a {
     display: block;
     color: var(--nav-color-1);  /* Основний колір меню */
-    font-size: .9rem;           /* Розмір тексту меню */
-    font-weight: 600;           /* Накреслення тексту меню */
+    font-size: 1rem;           /* Розмір тексту меню */
+    font-weight: 500;           /* Накреслення тексту меню */
     letter-spacing: .025em;
-    padding: 8px 0 18px;
+    padding: 3px 0 3px;
     margin-left: 32px;
     text-decoration: none;
     position: relative;
@@ -129,6 +129,7 @@ nav .navbar {
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .navigation li {

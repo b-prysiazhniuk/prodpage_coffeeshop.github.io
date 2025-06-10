@@ -12,31 +12,54 @@ html, body {
     scroll-behavior: smooth;/* Плавна прокрутка під час переходу за якорем (ancor) */
 }
 
- h2, h3, h4, h5, h6 {
+
+ h2, h5, h6 {
     font-family: "Neue Machina";  /* Гарнітура для заголовків */
     /*font-weight: 400;*/                       /* Накреслення для заголовків */
     line-height: 37px;                       /* Міжрядковий інтервал для заголовків в %/100 */
     letter-spacing: .05em;              /* Міжлітерний інтервал основного тексту збільшений на 2/1000 Em */
     margin-bottom: .35em;                       /* Відступ знизу після заголовку */
-    text-align: left;                       /* Вирівнювання тексту заголовків */
+    text-align: left; 
+    color: #27614B;                      
 }
 
 h1 { 
     font-family: "Neue Machina"; 
-    font-size: 60px;
-    font-weight:600; /* Встановлюємо Ultra Bold (шрифт "Neue Machina Ultra Bold" має вагу 900) */
+    font-size: 3.75rem;
+    font-weight:800; 
     line-height: 64px; /* Встановлюємо line-height */
-    letter-spacing: -2.2%; /* Встановлюємо відстань між літерами */
-    margin: 25px 0; /* Встановлюємо відступи зверху і знизу */
+    letter-spacing: 0; /* Встановлюємо відстань між літерами */
+    margin-bottom: .5em;
     text-align: left;
-    
-
 }     
-h2 { font-size: 1.5rem; }   /* rem - відносний розмір *(body font-size) */
-h3 { font-size: 1.15rem; }
+h2 { 
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 5.06rem;
+ }   
+
+h3 { 
+    font-family:"Golos Text", sans-serif; 
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #27614B;
+
+}
+
+h4 { 
+    font-size: 2.25rem; 
+    font-weight:600; 
+    margin-top: 4.875rem;    /* Відступ зверху */
+    margin-bottom: 1.7px; /* Відступ знизу */
+}
 
 p {
-    margin-bottom: .75em;   /* Відступ знизу після абзацу */
+    /*margin-bottom: .75em;*/   /* Відступ знизу після абзацу */
+    color: #000000;
+    font-size: 16px;     
+    font-weight: normal; 
+    line-height: 20px;
 }
 
 a {
@@ -52,11 +75,12 @@ a:hover {
 .img-box svg,
 .img-box img {
     display: block; /* Відображати зображення (<img>, <svg>) всередині контейнера .img-box як блочний елемент */
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .hlimit img {
     height: 100%;
+    margin-top: 5rem; 
 }
 
 .center {
@@ -105,3 +129,5 @@ a:hover {
     transform: translate(-50%, -50%); /* Точне центрування */
     width: 15%; /* Налаштуйте розмір */
 }
+
+ 

@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Choplin-Bold";
+    src: url(./Choplin-Bold.eot);
+    src: url(./Choplin-Bold.eot?#iefix) format('embedded-opentype');
+  }
+  
+  @font-face {
+    font-family: "Neue Machina";
+    src: url("NeueMachina-Bold.eot");
+    src: local("Neue Machina Bold"), local("NeueMachina-Bold"),
+        url("NeueMachina-Bold.eot?#iefix") format('embedded-opentype'),
+        url("NeueMachina-Bold.woff2") format('woff2'),
+        url("NeueMachina-Bold.woff") format('woff'),
+        url("NeueMachina-Bold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neue Machina";
+    src: url("NeueMachina-Ultrabold.eot");
+    src: local("Neue Machina Ultrabold"), local("NeueMachina-Ultrabold"),
+        url("NeueMachina-Ultrabold.eot?#iefix") format('embedded-opentype'),
+        url("NeueMachina-Ultrabold.woff2") format('woff2'),
+        url("NeueMachina-Ultrabold.woff") format('woff'),
+        url("NeueMachina-Ultrabold.ttf") format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+.golos-text {
+    font-family: "Golos Text", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
