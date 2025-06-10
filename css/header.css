@@ -319,6 +319,7 @@ header h1, header h2, header  {
 
 #s3 .hlimit img {
     height: 100%;
+    filter: drop-shadow(13px 6px 33.9px rgba(0, 0, 0, 0.25));
 }
 
 
@@ -357,17 +358,18 @@ header h1, header h2, header  {
   justify-content: center;
   gap: 36px;
   align-items: flex-end;
+  padding-top: 0px;
+
 }
 
 .coffee-card {
-  filter: drop-shadow(2px 2px 4px #ccc);
-  padding: 1em;
-  /* flex-direction: column;
-  justify-content: space-between;  */
+  filter: drop-shadow(0 0 101.1px #FAEAE0);
+  padding: 2em 1em 1.5em 1em;
+  margin-top: 122px; 
   position: relative;
   text-align: center;
   font-family: "Golos Text", sans-serif;
-  margin: 0 auto 12px auto;
+  margin: 0 auto 40px auto;
   border-radius: 8px;
   background-color: #FFFFFF;
 }
@@ -379,19 +381,23 @@ header h1, header h2, header  {
   z-index: 0;
 } 
 
-/* Розміри для великої картки */
+#s4 .img {
+  filter: drop-shadow(13px 6px 33.9px rgba(0, 0, 0, 0.25));
+}
+
+/* Розміри для великої картки
 .coffee-card.large .card-bg {
   width: 262px;
   height: 375px;
 }
 
-/* Розміри для малих карток */
+/* Розміри для малих карток 
 .coffee-card.small .card-bg {
   width: 175px;
   height: 211px;
   object-fit: cover; 
   border-radius: 8px; 
-}
+} */
 
 .coffee-card h3 {
   font-size: 18px;
@@ -481,3 +487,72 @@ text-align: center;
 }
 
 /*!-- Кінець #s5 --*/
+
+
+.footer {
+  background-color: #285843;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+  padding-left: 88px;
+  padding-right: 88px;
+}
+
+.footer-section {
+  margin: 10px;
+}
+.footer-section p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+  color: white;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.call-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.call-button:hover {
+  background-color: white;
+  color: #285843;
+}
+
+.social-icons img {
+  margin-right: 33px;
+  vertical-align: middle;
+}
