@@ -358,7 +358,6 @@ header h1, header h2, header  {
   justify-content: center;
   gap: 36px;
   align-items: flex-end;
-  padding-top: 0px;
 
 }
 
@@ -436,7 +435,6 @@ header h1, header h2, header  {
 
 .callback-form {
   padding: 32px;
-  max-width: 460px;
   width: 100%;
   font-family: "Golos Text", sans-serif;
 }
